@@ -18,6 +18,7 @@ ID_PREFIX = 'pet_'
 @given('I am on the "Home Page"')
 def step_impl(context):
     """ Make a call to the base URL """
+    #context.driver.get(context.base_url)
     context.driver.get(context.base_url)
 
 @when('I set the "{element_name}" to "{text_string}"')
